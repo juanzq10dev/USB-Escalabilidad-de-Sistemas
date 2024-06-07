@@ -1,0 +1,14 @@
+@HostAddress = http://localhost:3000
+
+### Get all users
+GET {{HostAddress}}/api/users
+
+### Register user
+POST {{HostAddress}}/api/users/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "user 6",
+    "password": "passwrd6",
+    "email": "user6@"
+}

@@ -1,0 +1,14 @@
+@HostAddress = http://localhost:3000
+
+### Get all Comments
+GET {{HostAddress}}/api/comments/6661cdb32a768fb7e10218c1
+
+### Register Comment
+### 6654b21265a01a8e192202d8
+POST {{HostAddress}}/api/comments/6661cdb32a768fb7e10218c1 HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "6661cdb32a768fb7e10218c1",
+    "content": "a comment 2"
+}

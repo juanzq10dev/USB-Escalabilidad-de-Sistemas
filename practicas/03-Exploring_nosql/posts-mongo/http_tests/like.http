@@ -1,0 +1,9 @@
+@HostAddress = http://localhost:3000
+
+### Sends like
+POST {{HostAddress}}/api/likes/6661cdb32a768fb7e10218c1 HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "665503f797f783251c16a7ca"
+}

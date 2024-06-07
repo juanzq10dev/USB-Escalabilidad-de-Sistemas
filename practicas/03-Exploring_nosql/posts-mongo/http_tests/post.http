@@ -1,0 +1,29 @@
+@HostAddress = http://localhost:3000
+
+### Get all Post
+GET {{HostAddress}}/api/posts?userId=6661cdb32a768fb7e10218c1
+
+### Register Post
+### 6654b21265a01a8e192202d8
+POST {{HostAddress}}/api/posts HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "665503f797f783251c16a7ca",
+    "title": "title 1",
+    "content": "none 1"
+}
+
+### Update Post
+PUT {{HostAddress}}/api/posts/6661cdb32a768fb7e10218c1 HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "6654a28748942977502a458b",
+    "title": "title 1 updated",
+    "content": "none 1 updated"
+}
+
+### Update Post
+DELETE {{HostAddress}}/api/posts/6661cdb32a768fb7e10218c1 HTTP/1.1
+
